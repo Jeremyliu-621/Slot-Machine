@@ -1,10 +1,22 @@
+"""
+
+Casino-style slotmachine with 1 row. Includes probabilities and different returns on a user's bet depending
+on the rarity and "consequence" of the symbols matched.
+
+slotmachine.py
+Jeremy Liu
+4/12/2025
+
+"""
+
 import random
 import time
 
 def main():
 
     # starting values
-    wallet = 500
+    initial_wallet = 500
+    wallet = initial_wallet
 
     number_previouswin = 0
     number_gains = 0
@@ -74,17 +86,19 @@ def main():
             # emojis[10:15] is "🥭", "🍋", "🍌", "👅", "🐵"
 
             gain = spin[0]["consequence"] * 3 * (bet/10)
+
             if spin[0]["symbol"] == "🐵":
                 print("A monkey (🐵) has griefed you! HAHA!")
+
             elif spin[0]["symbol"] in ["🍌", "👅"]:
                 time.sleep(1)
-
                 for _ in range(100): # prints 100 times
                     celebrator("🎉🎉🎉🎆🎆🎆 ELITE JACKPOT! 🎆🎆🎆🎉🎉🎉")
                     time.sleep(0.1)
                 time.sleep(0.9)
                 print("🎉🎉🎉🎆🎆🎆 THREE IN A ROW! 🎆🎆🎆🎉🎉🎉")
                 time.sleep(1)
+
             else:
                 time.sleep(1)
                 for _ in range(5):
@@ -119,6 +133,7 @@ def main():
                                 time.sleep(0.1)
                             time.sleep(0.9)
                             print("☀️☀️🌞🌞 TWO RARE MATCHING SYMBOLS! 🌞🌞☀️☀️")
+
                         else:
                             time.sleep(1)
                             for _ in range(3):
@@ -164,7 +179,7 @@ def main():
             time.sleep(1.5)
             print("Restarting! Slot machine ready!")
             time.sleep(1.5)
-            wallet += 100
+            wallet += initial_wallet
 
 def printer(first_symbol, second_symbol, third_symbol):
     print(f"""
@@ -194,9 +209,11 @@ def printer(first_symbol, second_symbol, third_symbol):
 
 def celebrator(prompt):
 
-    for _ in range(random.randint(10, 40)):
-        prompt += " "
-    prompt += random.choice(["💵", "💸", "💰", "❤️"])
+    for _ in range(3):
+
+        for _ in range(random.randint(10, 25)):
+            prompt += " "
+        prompt += random.choice(["💵", "💸", "💰", "❤️", "🧧",])
 
     print(prompt)
 
