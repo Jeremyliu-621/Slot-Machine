@@ -22,19 +22,42 @@ _Winter 2024_
 - Grade 11 CS review.
 - Growing appreciation for code.
 - University prep.
+- Games for friends that teaches them NOT to gamble, as they gamble way too much.
 
-### Features
+## Features
 
-My first relapse of coding since high school courses!
+Different showcases of the same slot machine!
+- Manual: User input plays the slot machine.
+- AI Simulation (Full Stats): An AI calculates wallet values to spin. Shows probabilities, averages, and other detailed statistics after max_spins.
+- AI Simulation (Lite Stats): Shows a more compact statistics with the same calculations.
+- Results-Only: Displays only the final results after max_spins.
 
 ## Credits
 
-Project inspiration from CS50's problem sets and weeks (lessons).
-- Main page   : https://cs50.harvard.edu/python/2022/
-- Weeks       : https://cs50.harvard.edu/python/2022/weeks/
-- Problem Sets: https://cs50.harvard.edu/python/2022/psets/
+Inspiration from friends.
 
-Some problem set solutions are altered to incorporate more knowledge.
+                .-------.
+                | SLOTS |
+    ____________|=======|____________
+   |  __    __    ___  _____   __    |
+   | / _\  / /   /___\/__   \ / _\   |
+   | \ \  / /   //  //  / /\ \ \    |
+   | _\ \/ /___/ \_//  / /  \/_\ \ []|
+   | \__/\____/\___/   \/     \__/ []|
+   |===_______===_______===_______===|
+   ||*|       |*|       |*|       |*||
+   ||*|       |*|       |*|       |*||
+   ||*|  🍇   |*|  🍊   |*|  🍌   |*||
+   ||*|       |*|       |*|       |*|| __
+   ||*|_______|*|_______|*|_______|*||(__)
+   |===_______===_______===_______===| ||
+   ||*|       |*|       |*|       |*|| ||
+   ||*|_______|*|_______|*|_______|*||_//
+   |lc=___________________________===|_/
+   |  /___________________________\  |
+   |   |  note: gambling is not  |   |
+  _|    \__condoned by: Jeremy__/    |_
+ (_____________________________________)
 
 ## License
 MIT © [Jeremy Liu]()
