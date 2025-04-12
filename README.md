@@ -34,7 +34,7 @@ Different showcases of the same slot machine!
 
 ## Credits
 
-Inspiration from friends.
+Inspiration from friends. ASCII art edited from: https://ascii.co.uk/art/slotmachine
 
                     .-------.
                     | SLOTS |
@@ -47,7 +47,7 @@ Inspiration from friends.
        |===_______===_______===_______===|
        ||*|       |*|       |*|       |*||
        ||*|       |*|       |*|       |*||
-       ||*|  🍇   |*|  🍇   |*|  🍇  |*||
+       ||*|       |*|       |*|       |*||
        ||*|       |*|       |*|       |*|| __
        ||*|_______|*|_______|*|_______|*||(__)
        |===_______===_______===_______===| ||
